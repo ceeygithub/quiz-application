@@ -44,7 +44,7 @@ nav {
     width: 100%;
     align-items: center;
     height: 75px;
-    /* background: var(--navColor); */
+  
     background: var(--bgColor);
     padding: 20px;
     border-bottom: 1px solid var(--borderButtom);
