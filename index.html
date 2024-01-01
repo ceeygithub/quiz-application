@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/b3e2dea5f4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo"> <img src="./assets/logo-removebg-preview.png" alt="" class="logo">
+            <h2>UIZZY</h2>
+            <!-- <span>UIZZY</span> -->
+        </div>
+        <i class="fa-solid fa-moon moon"></i>
+    </nav>
+
+    <div class="container hide">
+
+        <img src="./assets/online-test-animate.svg" alt="" class="hero-svg">
+        <div class="hero-left">
+
+
+
+            <p>Test your knowledge on frontend development <br>Take a quiz</p>
+            <button class="hero-btn">Start Test</button>
+        </div>
+    </div>
+    <div class="quiz-box hide">
+        <div class="top">
+            <div class="question-number"></div>
+            <div class="inner-top">
+                <!-- <i class="fa-solid fa-stopwatch"></i> -->
+                <!-- <img src="./assets/timer_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="timer-icon"> -->
+                <i class="fa-solid fa-stopwatch timer-icon"></i>
+                <!-- <span class="material-icons-outlined">darkmode</span> -->
+                <span class="timer">
+
+                </span>
+            </div>
+        </div>
+
+        <div class="question">
+
+        </div>
+        <div class="option-container">
+            <!-- <div class="option">cascading style sheet</div>
+            <div class="option">cascading stylesheet</div>
+            <div class="option">cascading style shit</div>
+            <div class="option">cascading styleshit</div> -->
+        </div>
+        <button class="nxtBtn hero-btn">Next</button>
+        <!-- <div class="indicatorContainer">
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div> -->
+    </div>
+
+    <div class="result-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Question</td>
+                <td class="totalQuestion"><span></span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td class="attempt"><span></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td class="correct"><span></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td class="wrong"><span></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td class="percentage"><span></span></td>
+            </tr>
+            <tr>
+                <td>Total score</td>
+                <td class="totalScore"><span></span></td>
+            </tr>
+        </table>
+        <button class="hero-btn try">Try Again</button>
+        <button class="hero-btn back ">Go back to Home</button>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./quiz.js"></script>
+</body>
+
+</html>
