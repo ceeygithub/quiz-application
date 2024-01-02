@@ -122,6 +122,7 @@ nextQuestion.addEventListener('click', () => {
 
     }
     else {
+        // timeRemaining = timerDuration;  /* clear counter? */
         getNewQuestions();
 
     }
@@ -140,6 +141,7 @@ function quizOver() {
 const startBtn = document.querySelector('.hero-btn');
 startBtn.addEventListener('click', () => {
     quizBox.classList.remove('hide');
+    // timeRemaining = timerDuration;
     resetQuiz();
     setAvailableQuestions(); // Reset available questions
     getNewQuestions();
@@ -163,6 +165,8 @@ tryAgain.addEventListener('click', () => {
     getNewQuestions();
 });
 
+
+
 // add event to back to home button
 const back = document.querySelector('.back');
 back.addEventListener('click', () => {
@@ -178,6 +182,9 @@ back.addEventListener('click', () => {
     setAvailableQuestions(); // Reset available questions
     getNewQuestions();
 })
+
+
+
 
 function updateBackground() {
     const darkMode = document.body.classList.contains('darkTheme');
@@ -313,17 +320,27 @@ function quizResult() {
 
 
 let timerDuration = 60; // Set the timer duration in seconds
-let timerInterval; // Variable to store the interval ID
-let timeRemaining = timerDuration; // Variable to track remaining time
+let timerInterval;
+// Variable to track remaining time
+let timeRemaining;
 
+// Function to start the timer
 function startTimer() {
+    // Reset the remaining time only if it's not set
+    if (typeof timeRemaining === 'undefined') {
+        timeRemaining = timerDuration;
+    }
+
+    // Clear any existing interval to prevent multiple timers
+    clearInterval(timerInterval);
+
+    // Set up a new interval
     timerInterval = setInterval(function () {
         const minutes = Math.floor(timeRemaining / 60);
         const seconds = timeRemaining % 60;
 
         const formattedTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
         document.querySelector('.timer').textContent = formattedTime;
-
 
         if (timeRemaining <= 0 || questionCounter === quiz.length) {
             clearInterval(timerInterval);
@@ -333,7 +350,6 @@ function startTimer() {
         }
     }, 1000);
 }
-
 
 window.onload = () => {
 
