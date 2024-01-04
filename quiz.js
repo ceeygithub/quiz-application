@@ -5,10 +5,11 @@ const quiz = [
        
      <br/>
  var x=12; 
-
+<br/>
 var y=8;
+<br/>
  var res=eval("x+y"); 
-
+<br/>
 document.write(res);  `,
         options: ['20', 'x + y', '128', 'I dont know'
         ],
@@ -32,12 +33,15 @@ document.write(res);  `,
     {
         q: ` what would be log to the console in the code snippet below :
         <br/>
-     <br/>
+  
 const language = "javascript";
-
+   <br/>
 if(language) {
+       <br/>
 console.log("Javascript is a programming language")
+   <br/>
 } else {
+       <br/>
 console.log("I don't know the language")
 
 }`,
@@ -122,7 +126,6 @@ nextQuestion.addEventListener('click', () => {
 
     }
     else {
-        // timeRemaining = timerDuration;  /* clear counter? */
         getNewQuestions();
 
     }
@@ -141,7 +144,6 @@ function quizOver() {
 const startBtn = document.querySelector('.hero-btn');
 startBtn.addEventListener('click', () => {
     quizBox.classList.remove('hide');
-    // timeRemaining = timerDuration;
     resetQuiz();
     setAvailableQuestions(); // Reset available questions
     getNewQuestions();
@@ -175,7 +177,6 @@ back.addEventListener('click', () => {
     quizBox.classList.add('hide')
     resultBox.classList.add('hide')
     homeBox.classList.remove('hide')
-    // document.body.style.background = "";
     timeRemaining = timerDuration;
     resetQuiz();
     startTimer();
