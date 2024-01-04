@@ -51,11 +51,16 @@ nav {
 
 }
 
-.nav-logo {
+/* .nav-logo {
     display: flex;
     align-items: center;
+} */
+.logo {
+    width: 100px;
+    /* height: 50px; */
+    margin-top: 0;
+    display: inline-block;
 }
-
 .container {
     display: flex;
     justify-content: center;
@@ -96,12 +101,7 @@ p {
 
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 0;
-    display: inline-block;
-}
+
 
 .hero-btn {
     background: var(--pryColor);
