@@ -152,8 +152,43 @@ p {
     padding: 10px;
 }
 
+
+/* rules box */
+.rules-box {
+    padding: 60px;
+    margin: 100px auto;
+    background: var(--beigeColor);
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 10px;
+    /* text-align: center; */
+    color: var(--textColor);
+    animation: fadeInRight 1s ease;
+}
+
+h3 {
+    /* font-size: min(7.5vmin, calc(2rem + 1.2vmax)); */
+    color: var(--textColor);
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px 0;
+
+}
+
+ol li {
+    line-height: 1.5;
+}
+.rules-btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.continue{
+    margin-left:1rem;
+}
 /* quiz box */
-.quiz-box {
+.quiz-box{
     padding: 20px;
     margin: 100px auto;
     background: var(--beigeColor);
@@ -254,7 +289,6 @@ p {
 .hide {
     display: none;
 }
-
 
 /* result */
 .result-box {
