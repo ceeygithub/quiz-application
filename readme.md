@@ -9,6 +9,7 @@ This project is a basic quiz app application built using HTML, CSS, and JavaScri
 - Light and dark mode for user's screen comfort.
 - Frontend questions with multiple choice.
 - Timer function.
+- Responsive on mobile.
 
 ## Usage
 
