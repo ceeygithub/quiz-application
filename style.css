@@ -329,7 +329,7 @@ table td {
     }
 
     .quiz-box,
-    .result-box {
+    .result-box, .rules-box {
         margin: 90px 10px 0 10px;
     }
 
