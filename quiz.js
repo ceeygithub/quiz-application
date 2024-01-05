@@ -115,6 +115,7 @@ const question = document.querySelector('.question');
 const optionContainer = document.querySelector('.option-container');
 const indicatorContainer = document.querySelector('.indicators');
 const homeBox = document.querySelector('.container');
+const ruleBox = document.querySelector('.rules-box');
 const quizBox = document.querySelector('.quiz-box');
 const resultBox = document.querySelector('.result-box');
 
@@ -143,11 +144,30 @@ function quizOver() {
 // add event to start button
 const startBtn = document.querySelector('.hero-btn');
 startBtn.addEventListener('click', () => {
+    resultBox.classList.add('hide');
+    homeBox.classList.add('hide');
+    quizBox.classList.add('hide');
+    ruleBox.classList.remove('hide');
+})
+
+const exitBtn = document.querySelector('.exit');
+exitBtn.addEventListener('click', () => {
+    resultBox.classList.add('hide');
+    homeBox.classList.remove('hide');
+    quizBox.classList.add('hide');
+    ruleBox.classList.add('hide');
+})
+
+
+// add event to continue button
+const continueBtn = document.querySelector('.continue');
+continueBtn.addEventListener('click', () => {
     quizBox.classList.remove('hide');
     resetQuiz();
     setAvailableQuestions(); // Reset available questions
     getNewQuestions();
     updateBackground();
+    ruleBox.classList.add('hide');
     resultBox.classList.add('hide')
     homeBox.classList.add('hide')
     startTimer();
@@ -320,7 +340,7 @@ function quizResult() {
 
 
 
-let timerDuration = 60; // Set the timer duration in seconds
+let timerDuration = 300; // Set the timer duration in seconds
 let timerInterval;
 // Variable to track remaining time
 let timeRemaining;
