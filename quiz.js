@@ -79,6 +79,13 @@ console.log("I don't know the language")
 
     },
     {
+        q: `How do you access the third element in an array named myArray in JavaScript?`,
+        options: [' myArray(2)', ' myArray[2]', 'myArray:third', 'myArray[3]'
+        ],
+        ans: 1,
+
+    },
+    {
         q: ` HTML is subset of which of the following`,
         options: ['  GHL', ' SHL', 'SGHL', 'SGML'
         ],
@@ -99,7 +106,27 @@ console.log("I don't know the language")
         ans: 1,
 
     },
+    {
+        q: `What is the difference between ` == ` and ` === ` operators in javascript?`,
+        options: [' == compares type only, === compares values and types', ' there is no difference ,they are both  equality operators', '== compares values only, === compares values and types', '== compares values and type, === compares references'
+        ],
+        ans: 2,
 
+    },
+    {
+        q: `What is the purpose of the  'async" and  "await" keywords in javascript?`,
+        options: ['They allow writing synchronous code in an asynchronous manner', ' They allow creating and executing promises', 'They allow writing asynchronous code in a synchronous manner', 'They have no special meaning,they are just identifiers'
+        ],
+        ans: 2,
+
+    },
+    {
+        q: `What is the difference between localStorage and sessionStorage in javascript?`,
+        options: ['localStorage clears data when the browser is closed, sessionStorage permits data across browser sessions', ' localStorage stores data on the server,sessionStorage stores data on the client', 'there is no difference,both are storage mechanisms', 'LocalStorage permits data across browser sessions,sessionStorage clears data when the browser is closed'
+        ],
+        ans: 3,
+
+    },
 ]
 
 
