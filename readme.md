@@ -2,7 +2,7 @@
 
 ## Overwiew
 
-This project is a basic quiz app application built using HTML, CSS, and JavaScript. It is a single page application(SPA) that assess the candidate's proficiency in JavaScript programming and front-end development
+This project is a basic quiz app application built using HTML, CSS, and JavaScript. It is an application that assess the candidate's proficiency in JavaScript programming and front-end development
 
 ## Features
 

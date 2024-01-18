@@ -100,8 +100,15 @@ p {
     color: var(--textColor);
 
 }
-
-
+form{
+    display: flex;
+    justify-content: center;
+        flex-direction: column;
+}
+input{
+    display: block;
+    align-items: center;
+}
 
 .hero-btn {
     background: var(--pryColor);
@@ -111,6 +118,7 @@ p {
     color: var(--textColor2);
     transition: 2s ease-in-out;
     border-radius: 20px;
+    /* width: 100px; */
 }
 
 .hero-btn:hover {
